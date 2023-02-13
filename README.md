@@ -3,6 +3,6 @@ running restates INPUT and also gives OUTPUT
 
 See 'whatwhyhow.docx' for written context of this tool
 
-For adding less or more additional constraints that can be added:
-1.  line 188 in 'main.py'
-2.  'explanation_restrictions.txt' for further explanation
+For adding less or more additional constraints that can be added, see:
+  line 188 in 'main.py'
+  'explanation_restrictions.txt' for further explanation
