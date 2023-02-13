@@ -1,5 +1,4 @@
-Open and run 'main.py' to use this tool;
-running restates INPUT and also gives OUTPUT
+Open and run 'main.py' to use this tool
 
 See 'whatwhyhow.docx' for written context of this tool
 
