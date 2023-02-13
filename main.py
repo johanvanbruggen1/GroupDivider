@@ -1,4 +1,5 @@
 # author: Johan van Bruggen
+# optimization library: PuLP
 
 # import
 import random
