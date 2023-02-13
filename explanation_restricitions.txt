@@ -1,0 +1,51 @@
+
+Text below explains how adding additional restrictions has an effect on ideal group division
+See line 188 in 'main.py' for the parameter desired_number_of_additional_constraints
+
+###
+
+Without any additional restriction,
+so desired_number_of_additional_constraints = 0,
+you get the following result:
+
+Group 1, consists of students: 1, 2, 7,
+Group 2, consists of students: 4, 8, 9,
+Group 3, consists of students: 3, 5, 6,
+
+---
+
+If you add constraint that in every group at least one person should be having actiontype 'extravert',
+while student 4, 6, 8 and 9 are extravert and the rest not, then group 1 doesn't meet this restriction.
+
+If we add the above mentioned constraint to the program by changing
+desired_number_of_additional_constraints from 0 to 1,
+then you get the following result:
+
+Group 1, consists of students: 1, 4, 8,
+Group 2, consists of students: 2, 7, 9,
+Group 3, consists of students: 3, 5, 6,
+and now indeed, in every group is at least one student with actiontype 'extravert'; student 4, 6, 8 and 9.
+
+---
+
+If we now add another constraint: every group should have at least one student with programming experience level 5,
+while that's only the case for student 1, 2, 7 and 9, then it is clear that group 3 doesn't meet that restriction.
+
+If we add the above mentioned constraint to the program by changing
+desired_number_of_additional_constraints from 1 to 2,
+then you get the following result:
+
+Group 1, consists of students: 3, 4, 9,
+Group 2, consists of students: 1, 2, 8,
+Group 3, consists of students: 5, 6, 7,
+and indeed, every group at least contains student 1, 2, 7 or 9,
+(while also still every group contains student 4, 6, 8 or 9, to meet the actiontype restriction)
+
+---
+
+This can go on by further increasing desired_number_of_additional_constraints
+and by that having adding one or more of the following restrictions:
+    - every group should contain no more than one student with programming experience level 3 or lower
+    - student 1 and student 5 are together in one group in whatever case
+    - student 1 and student 8 are *NOT* together in one group in whatever case
+
